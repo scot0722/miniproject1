@@ -1,0 +1,295 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.box {
+	width: 388px;
+	height: 600px;
+	border: black solid 1px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-top: -300px;
+	margin-left: -194px;
+	background: #fefcf0;
+	overflow: hidden;
+}
+
+.title {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	font-size: 42pt;
+	line-height: 32px;
+	color: #49bcbe;
+	padding: 25px;
+	font-weight: 900;
+	z-index: 4;
+	transition: 1s;
+}
+
+.number {
+	font-family: georgia;
+	position: relative;
+	color: #49bcbe;
+	letter-spacing: 5px;
+	padding-bottom: 35px;
+	font-size: 50pt;
+	transition: 1s;
+	float: left;
+}
+
+.a {
+	position: relative;
+}
+
+.b {
+	position: relative;
+	animation: b_move 1s;
+	animation-fill-mode: forwards;
+	transition: 1s;
+	opacity: 0;
+}
+
+.c {
+	position: relative;
+	animation: c_move 1s;
+	animation-fill-mode: forwards;
+	transition: 1s;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+
+.d {
+	position: relative;
+	animation: d_move 1s;
+	animation-fill-mode: forwards;
+	transition: 1s;
+	animation-delay: 1s;
+	opacity: 0;
+}
+
+.title:hover {
+	color: black;
+	transition: 1s;
+}
+
+.title:hover .number {
+	color: black;
+	transition: 1s;
+}
+
+.circle {
+	width: 70px;
+	height: 60px;
+	position: absolute;
+	margin-left: 15px;
+	margin-top: -10px;
+	z-index: 3;
+	animation: grow 2s infinite;
+}
+
+.circle2 {
+	width: 63px;
+	height: 55px;
+	position: absolute;
+	margin-left: 178px;
+	margin-top: 35px;
+	animation: grow 2s infinite;
+	z-index: 3;
+	animation-delay: 1s;
+}
+
+.circle3 {
+	width: 75px;
+	height: 65px;
+	position: absolute;
+	margin-left: 305px;
+	margin-top: 2px;
+	z-index: 3;
+	animation: grow 2s infinite;
+	animation-delay: .4s;
+}
+
+.circle4 {
+	width: 70px;
+	height: 60px;
+	position: absolute;
+	margin-left: 110px;
+	margin-top: 180px;
+	z-index: 3;
+	animation: grow 2s infinite;
+	animation-delay: .8s;
+}
+
+.circle5 {
+	width: 75px;
+	height: 65px;
+	position: absolute;
+	margin-left: 260px;
+	margin-top: 228px;
+	z-index: 3;
+	animation: grow 2s infinite;
+	animation-delay: .6s;
+}
+
+.circle6 {
+	width: 80px;
+	height: 75px;
+	position: absolute;
+	margin-left: 82px;
+	margin-top: 285px;
+	z-index: 3;
+	animation: grow 2s infinite;
+	animation-delay: 1.2s;
+}
+
+.rotate {
+	width: 50px;
+	height: 45px;
+	position: absolute;
+	margin-left: 83px;
+	margin-top: 60px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 4s linear infinite;
+}
+
+.rotate2 {
+	width: 65px;
+	height: 60px;
+	position: absolute;
+	margin-left: 160px;
+	margin-top: 90px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 7s linear infinite;
+}
+
+.rotate3 {
+	width: 55px;
+	height: 50px;
+	position: absolute;
+	margin-left: 270px;
+	margin-top: 70px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 3s linear infinite;
+}
+
+.rotate4 {
+	width: 60px;
+	height: 55px;
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 150px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 5.5s linear infinite;
+}
+
+.rotate5 {
+	width: 60px;
+	height: 55px;
+	position: absolute;
+	margin-left: 200px;
+	margin-top: 185px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 5s linear infinite;
+}
+
+.rotate6 {
+	width: 60px;
+	height: 55px;
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 305px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 6s linear infinite;
+}
+
+.rotate7 {
+	width: 70px;
+	height: 60px;
+	position: absolute;
+	margin-left: 200px;
+	margin-top: 270px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 4.5s linear infinite;
+}
+
+.rotate8 {
+	width: 55px;
+	height: 50px;
+	position: absolute;
+	margin-left: 80px;
+	margin-top: 235px;
+	z-index: 2;
+	transform-origin: 50% 50%;
+	animation: rotate 3.5s linear infinite;
+}
+
+.static {
+	width: 388px;
+	height: 600px;
+	position: absolute;
+	margin-top: -225px;
+	z-index: 1;
+}
+
+.logo {
+	width: 388px;
+	height: 600px;
+	position: absolute;
+	margin-top: -225px;
+	z-index: 1;
+}
+
+.byline {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	font-size: 12pt;
+	line-height: 12px;
+	color: #49bcbe;
+	padding: 30px;
+	text-align: right;
+	float: right;
+	margin-top: 295px;
+	z-index: 4;
+}
+
+#author {
+	font-size: 18pt;
+}
+
+@keyframes grow {
+	0% {transform: scale(1);}
+	50% {transform: scale(2);}
+	100% {transform: scale(1);}
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+@keyframes b_move {
+	0% {left: -20px; opacity: 0}
+	50% {left: -10px; opacity: 0}
+	100% {left: 0px; opacity: 1}
+}
+
+@keyframes c_move {
+	0% {left: -30px; opacity: 0}
+	50% {left: -15px; opacity: 0}
+	100% {left: 0px; opacity: 1}
+}
+
+@keyframes d_move {
+	0% {left: -40px; opacity: 0}
+	50% {left: -20px; opacity: 0}
+	100% {left: 0px; opacity: 1}
+}
